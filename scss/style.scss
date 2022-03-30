@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Lemonada&display=swap');
+body{
+    font-family: 'Almarai', sans-serif;
+    text-align: center;
+}
+.title{
+    position: relative;
+    font-family: 'Lemonada',Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 80px;
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: -30px;
+        right: calc(50% - 25px);
+        height: 3px;
+        width: 50px;
+        background: #54123b;
+    }
+}
+.mfp-counter{
+    direction: ltr;
+}
+.fa-solid.fa-phone{
+    cursor: pointer;
+}
+.modal-phone{
+    width: 100%;
+    height: 100vh;
+    background: #181818;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: animatetop;
+    animation-duration: 0.7s;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 65px;
+        i, &:hover{
+            color: #54123b;
+        }
+    }
+    .fa-xmark{
+        color: white;
+        font-size: 50px;
+        cursor: pointer;
+        margin-right: 95%;
+        margin-top: 10px;
+    }
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@keyframes animatetop {
+    from {top: -1000px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.bg{
+    background-color: #f8f8ff;
+}
+.navbar.nocolor{
+    background-color: transparent !important;
+}
+.navbar{
+    background-color: #cd6684 !important;
+}
+.navbar-light .navbar-brand{
+    color: #ffffff;
+}
+.nav-item{
+    margin: 0 8px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ffffff;
+    font-weight: 400;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #fff;
+}
+.head{
+    background: #00000078;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    div{
+        position: absolute;
+        min-height: 900px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(../img/head.webp);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+    h1,h2{
+        font-family: 'Lemonada',Arial,sans-serif;
+        font-size: 68px;
+        color: #ffffff;
+        line-height: 1.4;
+        text-shadow: 3px 3px 3px #000;
+        width: 75%;
+    }
+    h2{
+        margin-top: 50px;
+        font-size: 79px;
+        opacity: 0.7 !important;
+    }
+    a {
+        border: 1px solid #54123b;
+        color: #ffffff;
+        background-color: #54123b;
+        font-weight: 500;
+        margin-top: 40px;
+        padding: 15px 30px;
+    }
+}
+#about{
+    background-color: #f8f8ff;
+    .carousel{
+        width: 50%;
+        height: 500px;
+        img{
+            width: 50%;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    p{
+        background: #ebebeb;
+        width: 50%;
+        margin-left: -50px;
+        z-index: 1;
+        font-size: 16.5px;
+        line-height: 1.8;
+        padding: 50px;
+    }
+}
+.works{
+    img{
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+    .work-details{
+        padding: 20px;
+        margin-bottom: 20px;
+        h5{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #ecf0f1;
+                bottom: -15px;
+                left: 0;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+#service{
+    h3,p{
+        text-align: right;
+    }
+    .p-5{
+        background: #ebebeb;
+    }
+}
+#testimonial{
+    .item {
+        background: #ebebeb;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.3rem;
+        h4, p{
+            text-align: right;
+            font-weight: 500;
+        }
+        h4{
+            font-weight: 700;
+        }
+        img{
+            width: 165px;
+            height: 165px;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+        i{
+            color: #ffbf00;
+        }
+    }
+}
+#contact{
+    a{
+        color: white;
+        text-decoration: none;
+        color: #54123b;
+    }
+    textarea{
+        resize: none;
+    }
+    .btn{
+        background: #54123b;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+#gallery{
+    .col-md-4{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    a{
+        position: relative;
+
+    }
+    img{
+        border-radius: 10px;
+        &::after{
+            position: absolute;
+            content: "f06e";
+            font-family: "Font Awesome 6 Free";
+            top: 0;
+            left: auto;
+            right: auto;
+            background: #000;
+            height: 100%;
+        }
+    }
+}
+footer{
+    background-color: #cd6684;
+    color: #fff;
+}
+#gotoTop{
+    z-index: 1029;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,.3);
+    font-size: 20px;
+    line-height: 40px;
+    top: auto;
+    right: auto;
+    left: 100px;
+    bottom: 30px;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 2px;
+    text-align: center;
+}
+#phoneMagicButton{
+    z-index: 1029;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #ec5923;
+    font-size: 16px;
+    line-height: 40px;
+    top: auto;
+    right: auto;
+    left: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+@media (max-width: 767.98px) { 
+    #about .col-xs-12{
+        flex-direction: column;
+        .carousel,p{
+            width: 100%;
+        }
+        p{
+            margin: 0px 0px 10px;
+        }
+    }
+    .head{
+        h1,h2{
+            font-size: 3rem;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    h1,h2{
+        font-size: 3rem;
+    }
+}
+
