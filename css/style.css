@@ -325,5 +325,11 @@ footer {
     font-size: 3rem;
   }
 }
+#services img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=style.css.map */
