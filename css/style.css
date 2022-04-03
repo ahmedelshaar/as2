@@ -342,6 +342,14 @@ footer {
   .head h1, .head h2 {
     font-size: 3rem;
   }
+
+  .modal-phone .fa-xmark {
+    font-size: 40px;
+    margin-right: 80%;
+  }
+  .modal-phone a {
+    font-size: 40px;
+  }
 }
 @media (max-width: 575.98px) {
   h1, h2 {
